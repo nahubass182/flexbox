@@ -1,0 +1,30 @@
+.flex-container{
+    display: flex;
+    justify-content: center; /*propiedad para alinear en el centro. flex-star se alinean al comienzo, flex-end al final.
+    la propiedad space-around, centra y separa el contenido. y space-between lo mismo pero ajusta a los laterales.*/
+    background-color: gray;
+    padding: 10px;
+    border: 2px solid black;
+    /*otra propiedad para el flex container es el align items. el center alinea los items en la mitad, el flex-star,
+    se alinea arriba. el flex-end se alinea abajo. */
+
+    /*para alinear las filas tamb podemos usar align-content. space-between deja espacio entre filas. space-around deja
+    espacio entre filas y arriba y abajo de las filas. el stretch intenta ocupar todo el alto que pueda.
+    el center centra toda las filas. y tamb el flex-star y flex-end que alinean las filas arriba o abajo.*/
+}
+.flex-container div{
+    background-color: beige;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 2px solid black;
+}
+/*se van a poner en filas porque por defecto esta en flex-direction row. para poner en columnas: flex-direction column.
+en columna empezando al reves: flex-direction column-reverse. y si ponemos flex-direction row-reverse, las filas se van
+a dar vueltas.*/
+
+/*tambien esta la propiedad flex-wrap: wrap, esto lo que hace es que cuando no entran mas cosas en las filas,
+va creando nuevas filas abajo. */
+
